@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --require test/setup.js",
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
+    "start": "node src/practice.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku master"
   },
@@ -19,7 +18,9 @@
     "eslint": "^6.7.2",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
-    "morgan": "^1.9.1"
+    "knex": "^0.20.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.14.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
